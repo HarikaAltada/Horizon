@@ -1,0 +1,149 @@
+
+
+.learn-more-btn {
+  color: #16a34a;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.learn-more-btn:hover {
+  color: #065f46;
+}
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #86efac;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon-small {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+.section-header-home {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.icon.green { color: #22c55e; }
+.icon.blue { color: #3b82f6; }
+.icon.yellow { color: #eab308; }
+.icon.red { color: #ef4444; }
+.icon.purple { color: #8b5cf6; }
+.icon.amber { color: #f59e0b; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+
+
+
+/* HowItWorks.css */
+.zigzag-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.zigzag-container h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #0077cc;
+}
+
+.timeline-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ddd;
+  z-index: 0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.section-header-home p{
+    color:gray;
+     margin-top: 15px;
+     font-size: 17.5px;
+     line-height: 28px;
+     letter-spacing: 0.6px;
+}
+
+.timeline-fill {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #00aaff;
+  transition: height 0.3s ease;
+}
+.content-video{
+    color: gray;
+    line-height: 23px;
+}
+
+.timeline-step {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0.3;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1;
+}
+
+.timeline-step.right {
+  justify-content: flex-end;
+}
+
+.timeline-step.active {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.home-card {
+    
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: var(--transition);
+  background: #fff;
+  border-left: 4px solid #00aaff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.home-card h3 {
+  margin: 0 0 0.5rem;
+  color: #0077cc;
+}
+
+.home-card p {
+  margin: 0;
+  color: #555;
+}

@@ -1,0 +1,351 @@
+.tabs-container-feedback {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+  color: #6b7280; /* Tailwind's text-gray-500 */
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 9999px; /* Full rounding */
+  list-style: none;
+  margin: 0 auto;
+  width: 1000px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.ellipsis-icon {
+  margin-left: auto;
+  color: #888;
+  cursor: pointer;
+}
+.review-actions {
+  display: flex;
+  margin-top: 0.75rem;
+}
+.thumb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #6b7280;
+  transition: color 0.2s;
+}
+.thumb-btn:hover {
+  color: #111827;
+}
+.save-btn svg {
+  /* if you want a different color when “saved” */
+  color: var(--color-saved, inherit);
+}
+
+.tab-main-feedback {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  text-decoration: none;
+  color: inherit;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.tab-main-feedback.active {
+  background-color: white;
+  color: #312e81; /* Tailwind's text-indigo-900 */
+  border-radius: 9999px;
+
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.tab-label-feedback {
+  margin-left: 8px;
+}
+.review-list {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.review-container {
+  max-width: 920px;
+
+  margin: 25px auto;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+}
+
+.review-header,
+.owner-header {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviewer-name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.reviewer-meta {
+  margin: 2px 0 0;
+  color: #555;
+  font-size: 13px;
+}
+.avatar-text {
+  width: 40px;
+  height: 40px;
+  background-color: #4a90e2; /* Or any fallback color */
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.rating {
+  color: #ffa500;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.review-time {
+  color: #777;
+  font-size: 13px;
+}
+
+.review-text {
+  font-size: 15.5px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.review-actions button {
+  background: none;
+  border: none;
+
+  font-size: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.owner-reply {
+  margin-top: 20px;
+  border-left: 3px solid #ccc;
+  padding-left: 12px;
+}
+
+.owner-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.owner-tag {
+  color: gray;
+  font-size: 13px;
+  margin-left: 4px;
+}
+.no-data-container {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.no-data-icon {
+  margin-bottom: 0.5rem;
+  color: #9ca3af; /* gray-400 */
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
+
+.no-data-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 0.5rem;
+}
+
+.no-data-message {
+  display: flex;
+  color: #6b7280; /* gray-500 */
+  max-width: 30rem;
+  margin-bottom: 1.5rem;
+}
+.ellipsis-menu-container {
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.dropdown-delete{
+ position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+    z-index: 2000;
+    width: 100px;
+  
+}
+
+.dropdown-delete button {
+  background: none;
+   font-size: 16px;
+  border: none;
+  cursor: pointer;
+
+  padding: 10px 15px;
+}
+.dropdown-delete-btn{
+  text-align: center;
+  color: #808388; /* Tailwind's gray-400 */
+  transition: color 0.2s ease;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.no-data-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.no-data-button:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.no-data-button-icon {
+  margin-right: 0.5rem;
+}
+
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.reply-container {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-left: 2px solid #e5e7eb; /* Tailwind's gray-200 */
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.3s ease;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.reply-container:hover {
+  border-left-color: #60a5fa; /* Tailwind's blue-300 */
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.reply-subject {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937; /* Tailwind's gray-800 */
+}
+
+.reply-meta {
+  font-size: 0.75rem;
+  /* Tailwind's gray-500 */
+  margin-top: 0.125rem;
+}
+/* Thumbs up style */
+.thumb-btn.like-btn.active svg {
+  color: black; /* Green for like */
+}
+
+/* Thumbs down style */
+.thumb-btn.dislike-btn.active svg {
+  color: black; /* Red for dislike */
+}
+
+.thumb-btn .thumb-icon,
+.thumb-btn .thumb-count {
+  transition: color 0.3s ease;
+}
+
+.thumb-btn.active .thumb-icon,
+.thumb-btn.active .thumb-count {
+  color: black; /* Blue for likes, you can change based on theme */
+}
+
+.dislike-btn.active .thumb-icon,
+.dislike-btn.active .thumb-count {
+  color: black; /* Red for dislikes */
+}
+
+.reply-author {
+  font-weight: 500;
+}
+.reviewer-info h3{
+  margin-bottom: 10px;
+}
+.reviewer-info p{
+  margin-bottom: 10px;
+}
+.reply-delete-button {
+  font-size: 0.75rem;
+  color: #9ca3af; /* Tailwind's gray-400 */
+  transition: color 0.2s ease;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.trash-icon {
+  margin-right: 3px;
+}
+
+
+.reply-message {
+  font-size: 0.875rem;
+  color: #6b7280;
+  /* Tailwind's gray-700 */
+  margin-top: 0.5rem;
+  white-space: pre-line;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

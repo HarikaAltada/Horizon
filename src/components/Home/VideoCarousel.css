@@ -1,0 +1,84 @@
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.6rem;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% - 2rem);
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .carousel-track {
+    grid-auto-columns: calc(50% - 1rem);
+  }
+}
+@media (min-width: 768px) {
+  .carousel-track {
+    grid-auto-columns: calc(33.333% - 1rem);
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-track {
+    grid-auto-columns: calc(25% - 1rem);
+  }
+}
+
+.nav-button-video {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1f2937;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.5rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav-button-video:hover {
+  background-color: white;
+}
+
+.nav-button-video.left {
+  left: 1rem;
+}
+
+.nav-button-video.right {
+  right: 1rem;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 6px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 9999px;
+  background-color: #d1d5db;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dot:hover {
+  background-color: #9ca3af;
+}
+
+.dot.active {
+  width: 24px;
+  background-color: #4f46e5;
+}

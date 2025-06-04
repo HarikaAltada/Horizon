@@ -1,0 +1,52 @@
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .video-modal-content {
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .close-btn-content {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+  }
+  
+  .video-modal-content video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+/* Optional tweaks for very small devices */
+@media (max-width: 480px) {
+  
+  .video-modal-content {
+    aspect-ratio: 4 / 3;
+    max-width: 100%;
+  }
+
+  .close-btn-content {
+    top: 5px;
+    right: 5px;
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+}
