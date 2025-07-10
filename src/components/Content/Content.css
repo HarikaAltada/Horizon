@@ -266,12 +266,12 @@ article a:focus {
   outline: 1px dotted #28666e;
 }
 
-article a .icon {
+article a .icon-article {
   min-width: 24px;
   width: 24px;
   height: 24px;
   margin-left: 5px;
-
+ margin-top: 3px;
   transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
   transition: all 0.3s;
@@ -444,12 +444,12 @@ article:has(:hover, :focus) {
   outline: 1px dotted #28666e;
 }
 
-.book-content a .icon {
+.book-content a .icon-books {
   min-width: 24px;
   width: 24px;
   height: 24px;
   margin-left: 5px;
-
+  margin-top: 3px;
   transform: translateX(var(--link-icon-translate));
   opacity: var(--link-icon-opacity);
   transition: all 0.3s;

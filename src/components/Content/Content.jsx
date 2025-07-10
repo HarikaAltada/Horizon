@@ -310,7 +310,7 @@ const Content = () => {
                     <span class="sr-only">about this is some title</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon"
+                      class="icon-article"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -354,7 +354,7 @@ const Content = () => {
                     <span className="sr-only">about this is some title</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="icon"
+                      className="icon-books"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
